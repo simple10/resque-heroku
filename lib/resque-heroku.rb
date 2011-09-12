@@ -1,5 +1,4 @@
-require "resque-heroku/version"
-require 'resque/worker'
+require 'resque-heroku/version'
 
 # extend Resque::Heroku in your job class
 module Resque::Heroku

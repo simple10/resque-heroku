@@ -29,9 +29,3 @@ Include Resque::Heroku in your job classes
     end
   end
 
-Require resque-heroku from your Rakefile
-
-  require 'resque-heroku'
-  require 'tasks/resque-heroku'
-
-
