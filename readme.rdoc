@@ -1,7 +1,18 @@
 = Overview
 
-This is not an official Heroku gem. But it does encapsulate the community best practices for running Resque on Heroku.
- 
+Handle db connection and disconnection during forking of resque jobs on Heroku cedar stack.
+
+Fixes the following postgres log errors...
+
+  PGError: server closed the connection unexpectedly
+
+And
+
+  LOG:  could not receive data from client: Connection reset by peer
+  LOG:  unexpected EOF on client connection
+
+This is not an official Heroku gem.
+
 = Usage
 
 Install the gem in your Gemfile
@@ -18,5 +29,9 @@ Include Resque::Heroku in your job classes
     end
   end
 
+Require resque-heroku from your Rakefile
+
+  require 'resque-heroku'
+  require 'tasks/resque-heroku'
 
 
