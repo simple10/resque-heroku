@@ -29,3 +29,9 @@ Include Resque::Heroku in your job classes
     end
   end
 
+Load resque-heroku tasks from your Rakefile
+
+  load 'tasks/resque-heroku.rake'
+
+Now rake jobs:work is available.
+
