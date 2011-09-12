@@ -1,0 +1,22 @@
+= Overview
+
+This is not an official Heroku gem. But it does encapsulate the community best practices for running Resque on Heroku.
+ 
+= Usage
+
+Install the gem in your Gemfile
+
+  gem 'resque-heroku'
+
+Include Resque::Heroku in your job classes
+
+  class Job
+    extend Resque::Heroku
+
+    def self.perform
+      # do stuff
+    end
+  end
+
+
+
