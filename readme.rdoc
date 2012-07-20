@@ -21,8 +21,10 @@ Install the gem in your Gemfile
 
 Include Resque::Heroku in your job classes
 
+  require 'resque/plugins/heroku'
+
   class Job
-    extend Resque::Heroku
+    extend Resque::Plugins::Heroku
 
     def self.perform
       # do stuff
@@ -31,7 +33,6 @@ Include Resque::Heroku in your job classes
 
 Load resque-heroku tasks from your Rakefile
 
-  load 'tasks/resque-heroku.rake'
+  require 'resque/plugins/heroku/tasks'
 
 Now rake jobs:work is available.
-

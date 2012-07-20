@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "resque-heroku/version"
+require "resque/plugins/heroku/version"
 
 Gem::Specification.new do |s|
   s.name        = "resque-heroku"
-  s.version     = Resque::Heroku::VERSION
+  s.version     = Resque::Plugins::Heroku::VERSION
   s.authors     = ["Joe Johnston"]
   s.email       = ["joe@simple10.com"]
   s.homepage    = ""
