@@ -1,6 +1,8 @@
 = Overview
 
-Handle db connection and disconnection during forking of resque jobs on Heroku cedar stack.
+Automatically handle db connection and disconnection during forking of resque jobs on Heroku Cedar stack.
+
+This plugin is for Rails only since it hooks into ActiveRecord callbacks.
 
 Fixes the following postgres log errors...
 
